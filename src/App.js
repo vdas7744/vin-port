@@ -47,7 +47,7 @@ export default function App() {
         {Object.keys(sections).map((key) => (
           <button
             key={key}
-            className={\`hover:text-blue-600 \${activeSection === key ? 'text-blue-600' : ''}\`}
+            className={`hover:text-blue-600 ${activeSection === key ? 'text-blue-600' : ''}`}
             onClick={() => setActiveSection(key)}
           >
             {key.charAt(0).toUpperCase() + key.slice(1)}
